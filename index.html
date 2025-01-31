@@ -13,7 +13,8 @@
       theme: {
         extend: {
             fontFamily: {
-            sora: ["Sora", "sans-serif"], 
+            sora: ["Sora", "sans-serif"],
+            poppins: ["Poppins","sans-serif"] 
       },
             colors: {
             heroprimary: '#efebe3',
@@ -24,10 +25,10 @@
       }
     }
   </script>  
-  <!-- google sora font import  -->
+  <!-- google font import  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <!-- favicon -->
@@ -277,12 +278,64 @@
                     </div>
                 </div>
             </div>
-            
-
         </section>
           <!-- popular products end  -->
+
+
+        <!-- arrival and offers section start  -->
+         <section class="py-12 pt-12 lg:pt-36 pb-72 lg:pb-96 px-4 lg:px-36">      
+            <div>
+                <h2 class="font-semibold text-2xl lg:text-4xl text-accent pb-8 lg:pb-12">Arrival & Offers</h2>
+            </div>
+            <div class="flex flex-col lg:flex-row justify-center gap-5">
+                <div class="lg:relative flex bg-[#115414] rounded-xl pt-6 lg:pt-12 lg:w-7/12">
+                    <div class="flex flex-col gap-4 lg:gap-7 px-4 lg:px-10 py-6">
+                        <img class="h-10 lg:h-20 w-28 lg:w-60" src="assets/dawat-logo.png" alt="">
+                        <a class="btn bg-[#63b76d] border-[#63b76d] hover:text-white lg:hover:text-[#63b76d] text-white h-9 lg:h-16 w-44 lg:w-80 ">Cook Exotic Dishes</a>
+                        <h2 class="font-poppins text-2xl lg:text-4xl text-white">Up to <span class="font-bold"> 20% OFF</span></h2>
+                    </div>
+                    <div>
+                        <img class="lg:absolute lg:bottom-0 lg:right-0" src="assets/dawat-mock-up.png" alt="">
+                    </div>
+                </div>
+                <div class=" lg:relative flex bg-[#102861] rounded-xl pt-6 lg:w-5/12">
+                    <div class="flex flex-col gap-6 px-5">
+                        <img class="h-16 lg:h-32 w-16 lg:w-24" src="assets/india-gate-logo.png" alt="">
+                        <a class="btn bg-[#2A4D97] border-[#2A4D97] hover:text-white lg:hover:text-[#2A4D97] text-white h-9 lg:h-16 w-40 lg:w-72" >World's No.1 Rice</a>
+                        <h2 class="font-poppins text-4xl text-white">Up to <span class="font-bold"> 40% OFF</span></h2>
+                    </div>
+                    <div>
+                        <img class="lg:absolute lg:bottom-2 lg:right-5" src="assets/india-gate-mock-up.png" alt="">
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- arrival and offer section end  -->
+
     </main>
-    <footer>
+    <footer class="bg-accent text-white">
+        <div class="flex justify-between flex-col lg:flex-row px-4 lg:px-36 pb-12 lg:pb-36 pt-72 lg:pt-96 gap-10">
+            <div class="flex flex-col gap-3">
+                <img class="h-16 w-40" src="assets/logo-footer.png" alt="">
+                <p class="w-2/4">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+            </div>
+            <div class="lg:-ml-80">
+                <ul class="flex flex-col gap-5 lg:gap-8">
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <p>Follow Us</p>
+                <div class="flex gap-8 h-7 w-48 text-3xl ">
+                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                    <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
 
     </footer>
 </body>
