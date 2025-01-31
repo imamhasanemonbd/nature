@@ -283,7 +283,7 @@
 
 
         <!-- arrival and offers section start  -->
-         <section class="py-12 pt-12 lg:pt-36 pb-72 lg:pb-96 px-4 lg:px-36">      
+         <section class="py-12 pt-12 lg:pt-36 pb-80 lg:pb-96 px-4 lg:px-36">      
             <div>
                 <h2 class="font-semibold text-2xl lg:text-4xl text-accent pb-8 lg:pb-12">Arrival & Offers</h2>
             </div>
@@ -311,9 +311,29 @@
             </div>
          </section>
          <!-- arrival and offer section end  -->
+         <div class="relative">
+          <!-- newslatter section start  -->
+          <section class="px-4 lg:px-36 z-20 absolute -bottom-60 w-full">
+            <div class="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-32 bg-[#EFEBE3] rounded-2xl py-9 lg:py-14 px-3 lg:px-28">
+                <div>
+                    <img class="h-[182px] lg:h-[348px]" src="assets/vegetable-busket.png" alt="Grocery Basket" />
+                </div>
+                <div class="flex flex-col gap-5">
+                    <div class="flex flex-col gap-3 justify-center text-center lg:text-left">
+                        <h1 class="font-bold text-2xl lg:text-4xl">Get Grocery News!</h1>
+                        <p class="text-lg">Exclusive training tips, ticks, product deals and more.</p>
+                    </div>
+                    <div class="flex flex-col gap-3 items-center lg:items-start">
+                        <input class="h-11 lg:h-16 w-11/12 lg:w-full rounded-md pl-5 placeholder-gray-300" type="email" placeholder="Enter Email...">
+                        <a class="btn bg-accent text-white h-11 w-40 hover:text-accent" href="">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+           <!-- newslatter section end  -->
 
     </main>
-    <footer class="bg-accent text-white">
+    <footer class="bg-accent text-white z-10 relative">
         <div class="flex justify-between flex-col lg:flex-row px-4 lg:px-36 pb-12 lg:pb-36 pt-72 lg:pt-96 gap-10">
             <div class="flex flex-col gap-3">
                 <img class="h-16 w-40" src="assets/logo-footer.png" alt="">
@@ -338,5 +358,7 @@
         </div>
 
     </footer>
+</div>   
+        
 </body>
 </html>
