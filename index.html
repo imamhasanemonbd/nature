@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,31 +16,34 @@
             sora: ["Sora", "sans-serif"], 
       },
             colors: {
-            herocolor: '#efebe3',
+            heroprimary: '#efebe3',
+            accent: '#179800',
           }
         }
       }
     }
-  </script> 
+  </script>  
   <!-- google sora font import  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 <!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- favicon -->
+    <link rel="shortcut icon" href="assets/logo-icon.png" type="image/x-icon"> 
 
 </head>
-<body class="font-sora">
-    <header class="bg-gradient-to-t from-herocolor to-white-500 px-4 sm:px-6 md:px-12 lg:px-36 py-4 sm:py-6">
+<body class="font-sora m-0">
+    <header class="bg-gradient-to-t from-heroprimary to-white-500 px-5 lg:px-36 ">
         <nav>
-            <div class="navbar py-4 sm:py-6">
+            <div class="navbar py-4 sm:py-6 sm:flex sm:justify-between items-center">
                 <!-- Navbar Start -->
                 <div class="navbar-start flex items-center gap-2 sm:gap-4">
                     <img src="assets/logo-icon.png" alt="Logo Icon" class="lg:hidden w-6 sm:w-8 h-6 sm:h-8">
                     <img src="assets/logo-header.png" alt="Logo" class="hidden lg:block w-24 sm:w-32">
                 </div>
                 
-                <!-- Navbar Center (Only visible on large screens) -->
+                <!-- Navbar Center -->
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-2 sm:px-4">
                         <li><a class="text-sm sm:text-base">Product</a></li>
@@ -53,15 +56,15 @@
                 <div class="navbar-end lg:flex hidden space-x-2 sm:space-x-3">
                     <i class="fa-solid fa-magnifying-glass text-sm sm:text-base"></i>
                     <i class="fa-solid fa-cart-shopping text-sm sm:text-base"></i>
-                    <a class="btn btn-sm sm:btn-md">Login</a>
-                    <a class="btn btn-sm sm:btn-md">Register</a>
+                    <a class="btn px-8 py-3 h-11 w-auto border-accent">Login</a>
+                    <a class="btn px-8 py-3 h-11 w-auto bg-accent text-white">Register</a>
                 </div>
                 
                 <!-- Mobile Menu -->
-                <div class="lg:hidden">
+                <div class="lg:hidden ml-auto">
                     <div class="dropdown">
-                        <label tabindex="0" class="btn btn-ghost p-2 sm:p-3">
-                            <i class="fa-solid fa-bars text-xl sm:text-2xl"></i>
+                        <label tabindex="0" class="btn btn-ghost">
+                            <i class="fa-solid fa-bars text-2xl text-accent "></i>
                         </label>
                         <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-2 sm:mt-3 w-44 sm:w-52 p-2 sm:p-3 shadow">
                             <li><a class="text-sm sm:text-base">Product</a></li>
@@ -72,9 +75,18 @@
                 </div>
             </div>
         </nav>
+        <!-- hero section start  -->
+        <div class=" flex flex-col gap-y-4 lg:gap-y-8">           
+            <h1 class="font-semibold text-3xl lg:text-4xl text-center pt-12 lg:pt-24">Freshness <span class="text-accent">You Can <br> Count</span> On, Prices You'll Love!</h1>
+            <p class="text-xl text-center w-5/6 mx-auto">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+            <img class="" src="assets/hero-vegetables.png" alt="">             
+        </div>
+
     </header>
     <main>
-
+        <div>
+            <h1>Services</h1>
+        </div>
     </main>
     <footer>
 
