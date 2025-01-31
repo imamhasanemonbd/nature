@@ -36,7 +36,7 @@
 <body class="font-sora m-0">
     <header class="bg-gradient-to-t from-heroprimary to-white-500 px-5 lg:px-36 ">
         <nav>
-            <div class="navbar py-4 sm:py-6 sm:flex sm:justify-between items-center">
+            <div class="navbar py-4 sm:py-6 sm:flex sm:justify-between items-center ">
                 <!-- Navbar Start -->
                 <div class="navbar-start flex items-center gap-2 sm:gap-4">
                     <img src="assets/logo-icon.png" alt="Logo Icon" class="lg:hidden w-6 sm:w-8 h-6 sm:h-8">
@@ -62,9 +62,9 @@
                 
                 <!-- Mobile Menu -->
                 <div class="lg:hidden ml-auto">
-                    <div class="dropdown">
+                    <div class="dropdown dropdown-left">
                         <label tabindex="0" class="btn btn-ghost">
-                            <i class="fa-solid fa-bars text-2xl text-accent "></i>
+                            <i class="fa-solid fa-bars text-2xl text-accent"></i>
                         </label>
                         <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-2 sm:mt-3 w-44 sm:w-52 p-2 sm:p-3 shadow">
                             <li><a class="text-sm sm:text-base">Product</a></li>
@@ -73,8 +73,10 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
         </nav>
+        <hr class=" lg:hidden border-t-1 border-accent w-auto absolute left-0 right-0">
         <!-- hero section start  -->
         <div class=" flex flex-col gap-y-4 lg:gap-y-8">           
             <h1 class="font-semibold text-3xl lg:text-4xl text-center pt-12 lg:pt-24">Freshness <span class="text-accent">You Can <br> Count</span> On, Prices You'll Love!</h1>
