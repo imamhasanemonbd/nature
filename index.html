@@ -34,6 +34,29 @@
 <!-- favicon -->
     <link rel="shortcut icon" href="assets/logo-icon.png" type="image/x-icon"> 
 
+
+    <style>
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate {
+            opacity: 0;
+            animation: fadeUp 0.7s ease-in-out forwards;
+        }
+        .animate:nth-child(1) { animation-delay: 0.2s; }
+        .animate:nth-child(2) { animation-delay: 0.4s; } 
+        .animate:nth-child(3) { animation-delay: 0.6s; } 
+    </style>
+
+
+
 </head>
 <body class="font-sora m-0">
     <header class="bg-gradient-to-t from-heroprimary to-white-500 px-5 lg:px-36 ">
@@ -82,10 +105,14 @@
         <!-- navbar end  -->
         <hr class=" lg:hidden border-t-1 border-accent w-auto absolute left-0 right-0">
         <!-- hero section start  -->
-        <div class=" flex flex-col gap-y-4 lg:gap-y-8">           
-            <h1 class="font-semibold text-3xl lg:text-4xl text-center pt-12 lg:pt-24">Freshness <span class="text-accent">You Can <br> Count</span> On, Prices You'll Love!</h1>
-            <p class="text-xl text-center w-5/6 mx-auto">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
-            <img class="" src="assets/hero-vegetables.png" alt="">             
+        <div class="flex flex-col gap-y-4 lg:gap-y-8">           
+            <h1 class="font-semibold text-3xl lg:text-4xl text-center pt-12 lg:pt-24 animate">
+                Freshness <span class="text-accent">You Can <br> Count</span> On, Prices You'll Love!
+            </h1>
+            <p class="text-xl text-center w-5/6 mx-auto animate">
+                Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+            </p>
+            <img class="animate" src="assets/hero-vegetables.png" alt="Vegetables">             
         </div>
         <!-- hero section end  -->
 
@@ -104,7 +131,7 @@
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-xl">24/7 Services</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        <p>We are always available to assist, ensuring you get support anytime, day or night.</p>
                     </div>
                 </div>
                 
@@ -117,7 +144,7 @@
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-xl">Fast Delivery</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        <p>Enjoy quick and reliable delivery, bringing fresh products straight to your doorstep.</p>
                     </div>
                 </div>
                   <!-- card 3  -->
@@ -129,7 +156,7 @@
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-xl">Healthy Products</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        <p>We provide natural and organic items, carefully sourced for your well-being.</p>
                     </div>
                 </div>
             </div>
@@ -283,7 +310,7 @@
 
 
         <!-- arrival and offers section start  -->
-         <section class="py-12 pt-12 lg:pt-36 pb-80 lg:pb-96 px-4 lg:px-36">      
+         <section class="py-12 pt-12 lg:pt-36 pb-40 lg:pb-60 px-4 lg:px-36">      
             <div>
                 <h2 class="font-semibold text-2xl lg:text-4xl text-accent pb-8 lg:pb-12">Arrival & Offers</h2>
             </div>
@@ -311,21 +338,45 @@
             </div>
          </section>
          <!-- arrival and offer section end  -->
+          <!-- news section start  --> 
+          <section class="bg-heroprimary py-12 pb-80 px-5 lg:px-36">
+            <div>
+                <h2 class="font-semibold text-2xl lg:text-4xl text-accent pb-8 lg:pb-12">Latest News</h2>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-5">
+                <div class="bg-white px-4 py-4 rounded-2xl flex flex-col gap-4 ">
+                    <img class="rounded-2xl h-[300px] lg:h-[400px] w-[600px]" src="assets/farmers.webp" alt="">
+                    <p><i class="fa-solid fa-user"></i><a href=""> Imamhasanemon</a> | <i class="fa-solid fa-calendar"></i><a href=""> Feb 1, 2025</a></p>
+                    <h2 class="font-bold text-2xl">The Rise of Organic Farming: A Healthier Future</h2>
+                </div>
+                <div class="bg-white px-4 py-4 rounded-2xl flex flex-col gap-4 ">
+                    <img class="rounded-2xl h-[300px] lg:h-[400px] w-[600px]" src="assets/vegetables.webp" alt="">
+                    <p><i class="fa-solid fa-user"></i><a href=""> Imamhasanemon</a> | <i class="fa-solid fa-calendar"></i><a href=""> Feb 1, 2025</a></p>
+                    <h2 class="font-bold text-2xl">Superfoods You Need in Your Diet This Year</h2>
+                </div>
+                <div class="bg-white px-4 py-4 rounded-2xl flex flex-col gap-4 ">
+                    <img class="rounded-2xl h-[300px] lg:h-[400px] w-[600px]" src="assets/freshfood.webp" alt="">
+                    <p><i class="fa-solid fa-user"></i><a href=""> Imamhasanemon</a> | <i class="fa-solid fa-calendar"></i><a href=""> Feb 1, 2025</a></p>
+                    <h2 class="font-bold text-2xl">The Truth About Processed vs. Natural Foods</h2>
+                </div>
+            </div>
+        </section>
+           <!-- news section end  -->
          <div class="relative">
           <!-- newslatter section start  -->
           <section class="px-4 lg:px-36 z-20 absolute -bottom-60 w-full">
-            <div class="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-32 bg-[#EFEBE3] rounded-2xl py-9 lg:py-14 px-3 lg:px-28">
+            <div class="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-32 rounded-2xl py-9 lg:py-14 px-3 lg:px-28 bg-gradient-to-b lg:bg-gradient-to-r from-[#115414] to-[#102861]">
                 <div>
                     <img class="h-[182px] lg:h-[348px]" src="assets/vegetable-busket.png" alt="Grocery Basket" />
                 </div>
                 <div class="flex flex-col gap-5">
-                    <div class="flex flex-col gap-3 justify-center text-center lg:text-left">
+                    <div class="flex flex-col gap-3 justify-center text-center lg:text-left text-white">
                         <h1 class="font-bold text-2xl lg:text-4xl">Get Grocery News!</h1>
                         <p class="text-lg">Exclusive training tips, ticks, product deals and more.</p>
                     </div>
                     <div class="flex flex-col gap-3 items-center lg:items-start">
                         <input class="h-11 lg:h-16 w-11/12 lg:w-full rounded-md pl-5 placeholder-gray-300" type="email" placeholder="Enter Email...">
-                        <a class="btn bg-accent text-white h-11 w-40 hover:text-accent" href="">Subscribe</a>
+                        <a class="btn bg-accent text-white h-11 w-40 hover:text-accent border-accent" href="">Subscribe</a>
                     </div>
                 </div>
             </div>
